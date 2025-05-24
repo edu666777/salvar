@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Anotações sobre Erika</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #e0c3fc 100%);
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(80, 40, 120, 0.18);
+            padding: 36px 32px 32px 32px;
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -60px; left: -60px;
+            width: 180px; height: 180px;
+            background: radial-gradient(circle, #e0c3fc 60%, transparent 100%);
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .container::after {
+            content: "";
+            position: absolute;
+            bottom: -60px; right: -60px;
+            width: 180px; height: 180px;
+            background: radial-gradient(circle, #8ec5fc 60%, transparent 100%);
+            z-index: 0;
+            opacity: 0.4;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #7b2ff2;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 8px #e0c3fc99;
+        }
+        hr.decor {
+            border: none;
+            border-top: 2px dashed #b993d6;
+            margin: 18px 0 28px 0;
+            opacity: 0.7;
+        }
+        ul.notes {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+        ul.notes li {
+            background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
+            margin-bottom: 18px;
+            border-radius: 14px;
+            padding: 18px 20px 14px 20px;
+            box-shadow: 0 2px 8px #e0c3fc33;
+            position: relative;
+            transition: transform 0.12s;
+        }
+        ul.notes li:hover {
+            transform: scale(1.025);
+            box-shadow: 0 4px 16px #b993d655;
+        }
+        .date {
+            font-size: 0.98em;
+            color: #7b2ff2;
+            font-weight: bold;
+            margin-bottom: 6px;
+            display: block;
+            letter-spacing: 0.5px;
+        }
+        .quote {
+            font-style: italic;
+            color: #4b2067;
+        }
+        @media (max-width: 700px) {
+            .container {
+                padding: 18px 6vw 18px 6vw;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Anotações sobre Erika</h1>
+        <hr class="decor">
+        <ul class="notes">
+            <li>
+                <span class="date">6 de setembro de 2024</span>
+                Erika prefere fotos salientes de corpo todo.
+            </li>
+            <li>
+                <span class="date">4 de abril de 2024</span>
+                Nova palavra: <span class="quote">"descuramento".</span>
+            </li>
+            <li>
+                <span class="date">28 de abril de 2024</span>
+                <span class="quote">“Só não junte um sabonete perto de mim.”</span>
+            </li>
+            <li>
+                <span class="date">18 de fevereiro de 2024</span>
+                Erika "enveneria" com um mussi.
+            </li>
+            <li>
+                <span class="date">1 de outubro de 2023</span>
+                Presentes ideais para Erika: carro, casa, terreno, jatinho...
+            </li>
+            <li>
+                <span class="date">21 de junho de 2023</span>
+                <span class="quote">“Não gosta de doce muito doce.”</span>
+            </li>
+            <li>
+                <span class="date">1 de abril de 2025</span>
+                Pedir em casamento antes de 5 anos de namoro.
+            </li>
+            <li>
+                <span class="date">29 de março de 2025</span>
+                Vestido azul bebê.
+            </li>
+            <li>
+                <span class="date">25 de março de 2025</span>
+                Companheira para o panda.
+            </li>
+            <li>
+                <span class="date">23 de março de 2025</span>
+                Gosta de ser adulada.
+            </li>
+            <li>
+                <span class="date">20 de março de 2025</span>
+                Gosta de ver meu se despindo.
+            </li>
+            <li>
+                <span class="date">10 de fevereiro de 2025</span>
+                Gosta de ver meu cabelo cortado.
+            </li>
+            <li>
+                <span class="date">17 de janeiro de 2025</span>
+                Pulseira dourada.
+            </li>
+            <li>
+                <span class="date">10 de janeiro de 2025</span>
+                Conquistar com 3 pastéis.
+            </li>
+            <li>
+                <span class="date">30 de novembro de 2024</span>
+                <span class="quote">“Homem é bicho lerdo.”</span>
+            </li>
+            <li>
+                <span class="date">25 de novembro de 2024</span>
+                Comprar algemas.
+            </li>
+        </ul>
+        <hr class="decor">
+    </div>
+</body>
+</html>
